@@ -1,5 +1,5 @@
 // TO INCLUDE THE NAV BAR (NAV.HTML)
-fetch('/static/includes/nav.html')
+fetch('./static/includes/nav.html')
 .then(res => res.text())
 .then(text => {
     let oldelem = document.querySelector("script#replace_with_navbar");
@@ -9,7 +9,7 @@ fetch('/static/includes/nav.html')
 })
 
 // TO INCLUDE GLOSSARY.HTML
-fetch('/static/includes/glossary.html')
+fetch('./static/includes/glossary.html')
 .then(res => res.text())
 .then(text => {
     let oldelem = document.querySelector("script#replace_with_glossary");
@@ -19,7 +19,7 @@ fetch('/static/includes/glossary.html')
 })
 
 // TO INCLUDE FOOTER.HTML
-fetch('/static/includes/footer.html')
+fetch('./static/includes/footer.html')
 .then(res => res.text())
 .then(text => {
     let oldelem = document.querySelector("script#replace_with_footer");
